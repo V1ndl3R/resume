@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head id="head">
+        <meta content="text/html; charset=UTF=8" http-equiv="Content-Type"/>
+        <title>Cory's Resume Site</title>
+        <meta id="MetaDescription" name="DESCRIPTION"
+            content="Offical Website for Cory Ethridge"/>
+        <meta id="MetaKeywords" name="KEYWORDS"
+            content="CE, Cory, Ethridge, Software Engineer" />
+        <meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLOOW" />
+
+        <style>
+            @media screen and (max-width: 600px) {
+                #certs{
+                display: flex;
+                align-content: space-around;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                }
+            }
+            .cert-cards{
+                
+                padding: 10px;
+                display: flex;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 80%;
+                height: 500px;
+                text-align: center;
+                margin: auto;
+                flex-direction: column;
+                align-content: space-between;
+                
+
+            }
+            .cert-cards:hover{
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,100);
+            }
+            .card-img {
+                align-self: flex-end;
+            }
+            img{
+                width: 250px;
+                height: 250px;
+            }
+            .card-header{
+                flex-grow: 2;
+                font-size: 30px;
+            }
+
+                
+                
+            @media screen and (min-width: 991px) {
+                #certs{
+                display: flex;
+                align-content: space-around;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .cert-cards{
+                padding: 10px;
+                display: flex;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 250px;
+                height: 300px;
+                text-align: center;
+                margin: 10px;
+                flex-direction: column;
+                align-content: space-between;
+            }
+            .cert-cards:hover{
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,100);
+            }
+            .card-img {
+                align-self: flex-end;
+            }
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            .card-header{
+                flex-grow: 3;
+                font-size: large;
+            }
+
+                
+            }
+            
+
+        </style>
+    </head>   
+        <script>
+            let certs = [
+    
+    {
+        "name": "Blue Team Level 1",
+        "abbr": "BTL1",
+        "iss": "June 15, 2022",
+        "exp": "",
+        "link": "https://www.credly.com/badges/daf7ead6-c538-464a-9f68-069e033f903d",
+        "img": "/assests/img/certs/BTL1.png"
+    },
+    {
+        "name": "CompTIA Security Analytics Expert",
+        "abbr": "CSAE",
+        "iss": "April 01, 2022",
+        "exp": "April 01, 2025",
+        "link": "https://www.credly.com/badges/3e7a835a-b3d9-4acd-a00e-96f46c450123",
+        "img": "/assests/img/certs/CSAE.png"
+
+    },
+    {
+        "name": "CompTIA Infrastructure Security Expert",
+        "abbr": "CSIE",
+        "iss": "April 01, 2022",
+        "exp": "April 01, 2025",
+        "link": "https://www.credly.com/badges/db54bd32-ae87-4e43-a786-43ee85b7cce3",
+        "img": "/assests/img/certs/CSIE.png"
+    },
+    {
+        "name": "CompTIA Advanced Security Practitioner ce",
+        "abbr": "CASP+",
+        "iss": "April 01, 2022",
+        "exp": "April 01, 2025",
+        "link": "https://www.credly.com/badges/7c871658-9ddb-424a-a6ae-fb7f0033c4dc",
+        "img": "/assests/img/certs/CASP+.png"
+    },
+    {
+        "name": "CompTIA Linux Professional",
+        "abbr": "CLNP",
+        "iss": "January 28, 2022",
+        "exp": "January 28, 2025",
+        "link": "https://www.credly.com/badges/48c242ee-5d1b-41ff-a9ee-340317adf1e0",
+        "img": "/assests/img/certs/CLNP.png"
+    },
+    {
+        "name": "CompTIA Linux+ ce",
+        "abbr": "Linux+",
+        "iss": "January 28, 2022",
+        "exp": "January 28, 2025",
+        "link": "https://www.credly.com/badges/8effdad1-9899-47ef-aa0b-39c45fab0240",
+        "img": "/assests/img/certs/Linux+.png"
+    },
+    {
+        "name": "CompTIA Network Security Professional",
+        "abbr": "CNSP",
+        "iss": "November 20, 2021",
+        "exp": "April 01, 2025",
+        "link": "https://www.credly.com/badges/28bcaae3-7282-463b-ab73-960784f62ad9",
+        "img": "/assests/img/certs/CNSP.png"
+    },
+    {
+        "name": "CompTIA Security Analytics Professional",
+        "abbr": "CSAP",
+        "iss": "November 20, 2021",
+        "exp": "April 01, 2025",
+        "link": "https://www.credly.com/badges/f6b907c3-c500-4aba-a59f-ffaf92dd25ea",
+        "img": "/assests/img/certs/CSAP.png"
+    },
+    {
+        "name": "CompTIA Cybersecurity Analyst ce",
+        "abbr": "CySA+",
+        "iss": "November 20, 2021",
+        "exp": "April 01, 2025",
+        "link": "https://www.credly.com/badges/30790188-8ba2-43a4-8075-caca1d594dff",
+        "img": "/assests/img/certs/CySA+.png"
+    },
+    {
+        "name": "Trifacta Platform Administrator",
+        "abbr": "Trifacta Admin",
+        "iss": "October 08, 2021",
+        "exp": "October 08, 2023",
+        "link": "https://www.credly.com/badges/b6499425-b7f3-4c0f-a331-3093489d7f4a",
+        "img": "/assests/img/certs/Trifacta-Admin-Badge.png"
+    },
+    {
+        "name": "Trifacta Data Deputy",
+        "abbr": "Trifacta Deputy",
+        "iss": "October 07, 2021",
+        "exp": "October 07, 2023",
+        "link": "https://www.credly.com/badges/ccfa5ec0-19b4-41d4-8f02-d409027fc822",
+        "img": "/assests/img/certs/Certification-Deputy.png"
+    },
+    {
+        "name": "Trafacta Data Wrangler",
+        "abbr": "Trifacta Wrangler",
+        "iss": "September 28, 2021",
+        "exp": "September 28, 2023",
+        "link": "https://www.credly.com/badges/978712b8-b129-4e5c-bb31-0cc78766ba79",
+        "img": "/assests/img/certs/Certification-Wrangler.png"
+    },
+    {
+        "name": "CompTIA Network Vulnerability Assessment Professional",
+        "abbr": "CNVP",
+        "iss": "May 08, 2021",
+        "exp": "May 08, 2027",
+        "link": "https://www.credly.com/badges/15915049-d358-44a5-909d-4adabb0bb2e2",
+        "img": "/assests/img/certs/CNVP.png"
+    },
+    {
+        "name": "CompTIA PenTest+ ce",
+        "abbr": "PenTest+",
+        "iss": "May 08, 2021",
+        "exp": "May 08, 2027",
+        "link": "https://www.credly.com/badges/b5604587-d574-4b6c-bdf4-e5abb1434637",
+        "img": "/assests/img/certs/PenTest+.png"
+    },
+    {
+        "name": "CompTIA Security+ ce",
+        "abbr": "Security+",
+        "iss": "November 11, 2020",
+        "exp": "May 08, 2027",
+        "link": "https://www.credly.com/badges/f888f636-ebd9-4abd-b8d8-e7cfc8cf7a5a",
+        "img": "/assests/img/certs/Security+.png"
+    },
+    {
+        "name": "Google IT Support Certificate",
+        "abbr": "Google IT Cert",
+        "iss": "September 22, 2020",
+        "exp": "",
+        "link": "https://www.credly.com/badges/92e3334c-7e81-407d-a29a-d510bcb54151",
+        "img": "/assests/img/certs/google-IT.png"
+    },
+    {
+        "name": "CompTIA Network+ ce",
+        "abbr": "Network+",
+        "iss": "August 13, 2020",
+        "exp": "May 08, 2027",
+        "link": "https://www.credly.com/badges/3e5d303e-bea8-4671-8414-6db2a1c9507a",
+        "img": "/assests/img/certs/Network+.png"
+    }    
+];
+</script>
+    <main>
+        <div id="certs" class="cert-container">
+
+        </div>
+
+
+
+    </main>
+    <script>
+        for (let i = 0; i < certs.length; i++) {
+            let card = document.createElement("div");
+            let cardContent =`<div class="cert-cards">
+                <h3 class="card-header">${certs[i].name}</h3>
+                <h5>Issued: ${certs[i].iss}</h5>
+                <a href=${certs[i].link}><img class="card-img" src=${certs[i].img}></a>
+            `;
+            card.innerHTML = cardContent;            
+            document.getElementById("certs").appendChild(card);
+        }
+    </script>
+
+
+
+</html>
